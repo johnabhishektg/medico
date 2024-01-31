@@ -172,8 +172,8 @@ function App() {
       </section>
 
       {/* wellness section */}
-      <section className="px-36 pt-28 h-[842px] bg-white ">
-        <div className="md:flex justify-between items-end h-[340px]">
+      <section className="px-36 pt-28 h-[742px] bg-white ">
+        <div className="px-12 md:flex justify-between items-end h-[340px]">
           <div className="relative bg-secondary w-[385px] h-[128px] rounded-2xl">
             <img
               className="absolute bottom-0 right-8"
@@ -182,7 +182,7 @@ function App() {
             />
           </div>
 
-          <ul className="mr-44 mb-12">
+          <ul className="mr-14 mb-12">
             <h1 className="mb-8 text-5xl font-semibold">Why Choose Us?</h1>
             <li className="flex gap-4 font-medium text-base mt-2">
               <Check className="bg-primary text-white p-1 rounded-full" />
@@ -207,7 +207,7 @@ function App() {
           </ul>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 px-12">
           <h1 className="text-4xl font-semibold">
             Wellness, Compassion, Quality
           </h1>
@@ -217,6 +217,71 @@ function App() {
             and supplies it.
           </p>
           <button className="btn-primary mt-6">Take an appointment</button>
+        </div>
+      </section>
+
+      {/* health checkup plans */}
+      <section className="px-36 md:h-[977px]">
+        <div className="mt-24 flex justify-center items-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-semibold">Health Checkup Plans</h1>
+            <p className="mt-4 leading-6 md:w-[520px]">
+              They live in Bookmarks grove right at the coast of the Semantics,
+              a large language ocean named flows.
+            </p>
+
+            <div className="mt-6 flex items-center justify-center  py-4 rounded-lg gap-8 bg-white">
+              <div className="text-base font-medium inline-block bg-primary rounded-xl p-3 text-white">
+                Woman Health
+              </div>
+              <div className="text-base font-medium cursor-pointer hover:text-primary">
+                Cancer Screening
+              </div>
+              <div className="text-base font-medium cursor-pointer hover:text-primary">
+                Kids Vaccines
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-40 px-16 md:flex justify-between items-end h-[340px]">
+          <div className="">
+            <img
+              className="bg-primary rounded-full text-white p-1 w-12"
+              src="../logo.png"
+              alt="logo"
+            />
+            <h1 className="mt-6 text-4xl font-semibold">
+              Women Health Checkup
+            </h1>
+            <p className="mt-4 md:w-[511px] leading-6">
+              A wonderful serenity has taken possession of my entire soul, like
+              these sweet mornings of spring.
+            </p>
+            <ul className="mt-4">
+              <li className="flex gap-4 font-medium text-base mt-2">
+                <Check className="bg-black text-white p-1 rounded-full" />
+                <div>Complete Blood Count with ESR</div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-2">
+                <Check className="bg-black text-white p-1 rounded-full" />
+                <div>Lipid Profile, Live Profile, kidney Profile </div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-2">
+                <Check className="bg-black text-white p-1 rounded-full" />
+                <div>USG Abdomen with Pelvis, Mammography</div>
+              </li>
+            </ul>
+            <button className="btn-primary mt-12">Take an appointment</button>
+          </div>
+
+          <div className="relative bg-secondary w-[385px] h-[128px] mt-8 mr-8 rounded-2xl">
+            <img
+              className="absolute bottom-0 left-4"
+              src="../image30.png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </div>
