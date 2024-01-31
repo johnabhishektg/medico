@@ -55,7 +55,7 @@ function App() {
 
       {/* header nav */}
       <section className=" justify-center hidden md:flex">
-        <div className="flex items-center justify-between bg-white px-5 py-7 rounded m-4 w-[1134px] h-[95px]">
+        <div className="flex items-center justify-between bg-white px-5 py-7 rounded m-4 w-auto md:w-[1134px] h-[95px]">
           <div className="flex gap-2">
             <img className="w-6 h-6" src="../logo.png" alt="logo" />
             <h3 className="font-bold text-xl">Medico</h3>
@@ -115,7 +115,7 @@ function App() {
           for the bliss of souls like mine.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 text-center md:text-left md:justify-normal gap-36 mt-20">
+        <div className="flex flex-wrap justify-center md:grid md:grid-cols-3 text-center md:text-left  gap-36 mt-20">
           <div className="relative text-center">
             <img src="../image41.png" alt="" />
             <p className="absolute font-medium text-md rounded-3xl -bottom-7 left-7 p-4 bg-primary text-white w-[192px]">
@@ -138,7 +138,7 @@ function App() {
       </section>
 
       {/* service & treat */}
-      <section className="md:px-36 mt-16 h-[777px]">
+      <section className="md:px-36 mt-16 md:h-[777px]">
         <div className="md:flex text-center md:text-left items-end justify-between">
           <div className="md:w-[538px] h-24">
             <p className="uppercase font-bold text-sm text-primary">
@@ -180,9 +180,9 @@ function App() {
       </section>
 
       {/* wellness section */}
-      <section className="px-36 pt-28 h-[742px] bg-white ">
-        <div className="px-12 md:flex justify-between items-end h-[340px]">
-          <div className="relative bg-secondary w-[385px] h-[128px] rounded-2xl">
+      <section className="pt-64 md:pt-20 md:px-36 md:h-[742px] bg-white">
+        <div className="px-12 text-center md:text-left md:flex justify-between items-center md:items-end md:h-[340px]">
+          <div className="relative flex jus bg-secondary md:w-[385px] h-[128px] rounded-2xl">
             <img
               className="absolute bottom-0 right-8"
               src="../image36.png"
@@ -190,32 +190,36 @@ function App() {
             />
           </div>
 
-          <ul className="mr-14 mb-12">
-            <h1 className="mb-8 text-5xl font-semibold">Why Choose Us?</h1>
-            <li className="flex gap-4 font-medium text-base mt-2">
-              <Check className="bg-primary text-white p-1 rounded-full" />
-              <div>Safety First Quality Must</div>
-            </li>
-            <li className="flex gap-4 font-medium text-base mt-4">
-              <Check className="bg-primary text-white p-1 rounded-full" />
-              <div>Patient-Centric Approach</div>
-            </li>
-            <li className="flex gap-4 font-medium text-base mt-4">
-              <Check className="bg-primary text-white p-1 rounded-full" />
-              <div>Cutting-Edge Technology</div>
-            </li>
-            <li className="flex gap-4 font-medium text-base mt-4">
-              <Check className="bg-primary text-white p-1 rounded-full" />
-              <div>Transparent Pricing</div>
-            </li>
-            <li className="flex gap-4 font-medium text-base mt-4">
-              <Check className="bg-primary text-white p-1 rounded-full" />
-              <div>Coordinated Care</div>
-            </li>
-          </ul>
+          <div className="flex justify-center md:none">
+            <ul className="mr-14 mb-12 text-center">
+              <h1 className="mt-12 md:mt-0 mb-8 text-4xl md:text-5xl font-semibold">
+                Why Choose Us?
+              </h1>
+              <li className="flex gap-4 font-medium text-base mt-2">
+                <Check className="bg-primary text-white p-1 rounded-full" />
+                <div>Safety First Quality Must</div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-4">
+                <Check className="bg-primary text-white p-1 rounded-full" />
+                <div>Patient-Centric Approach</div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-4">
+                <Check className="bg-primary text-white p-1 rounded-full" />
+                <div>Cutting-Edge Technology</div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-4">
+                <Check className="bg-primary text-white p-1 rounded-full" />
+                <div>Transparent Pricing</div>
+              </li>
+              <li className="flex gap-4 font-medium text-base mt-4">
+                <Check className="bg-primary text-white p-1 rounded-full" />
+                <div>Coordinated Care</div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="mt-12 px-12">
+        <div className="mt-12 px-12 text-center md:text-left">
           <h1 className="text-4xl font-semibold">
             Wellness, Compassion, Quality
           </h1>
@@ -229,7 +233,7 @@ function App() {
       </section>
 
       {/* health checkup plans */}
-      <section className="px-36 md:h-[977px]">
+      <section className="md:px-36 md:h-[977px]">
         <div className="mt-24 flex justify-center items-center">
           <div className="text-center">
             <h1 className="text-4xl font-semibold">Health Checkup Plans</h1>
@@ -252,13 +256,15 @@ function App() {
           </div>
         </div>
 
-        <div className="mt-40 px-16 md:flex justify-between items-end h-[340px]">
-          <div className="">
-            <img
-              className="bg-primary rounded-full text-white p-1 w-12"
-              src="../healthcare.png"
-              alt="logo"
-            />
+        <div className="mt-40 px-16 flex items-center justify-center md:justify-between md:items-end md:h-[340px]">
+          <div className="md:text-left text-center">
+            <div className="flex justify-center md:justify-normal">
+              <img
+                className="bg-primary rounded-full text-white p-1 w-12"
+                src="../healthcare.png"
+                alt="logo"
+              />
+            </div>
             <h1 className="mt-6 text-4xl font-semibold">
               Women Health Checkup
             </h1>
@@ -266,24 +272,26 @@ function App() {
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring.
             </p>
-            <ul className="mt-4">
-              <li className="flex gap-4 font-medium text-base mt-2">
-                <Check className="bg-black text-white p-1 rounded-full" />
-                <div>Complete Blood Count with ESR</div>
-              </li>
-              <li className="flex gap-4 font-medium text-base mt-2">
-                <Check className="bg-black text-white p-1 rounded-full" />
-                <div>Lipid Profile, Live Profile, kidney Profile </div>
-              </li>
-              <li className="flex gap-4 font-medium text-base mt-2">
-                <Check className="bg-black text-white p-1 rounded-full" />
-                <div>USG Abdomen with Pelvis, Mammography</div>
-              </li>
-            </ul>
-            <button className="btn-primary mt-12">Take an appointment</button>
+            <div className="flex justify-center md:justify-normal">
+              <ul className="mt-4">
+                <li className="flex gap-4 font-medium text-base mt-2">
+                  <Check className="bg-black text-white p-1 rounded-full" />
+                  <div>Complete Blood Count with ESR</div>
+                </li>
+                <li className="flex gap-4 font-medium text-base mt-2">
+                  <Check className="bg-black text-white p-1 rounded-full" />
+                  <div>Lipid Profile, Live Profile, kidney Profile </div>
+                </li>
+                <li className="flex gap-4 font-medium text-base mt-2">
+                  <Check className="bg-black text-white p-1 rounded-full" />
+                  <div>USG Abdomen with Pelvis, Mammography</div>
+                </li>
+              </ul>
+            </div>
+            <button className="btn-primary mt-12 ">Take an appointment</button>
           </div>
 
-          <div className="relative bg-secondary w-[385px] h-[128px] mt-8 mr-8 rounded-2xl">
+          <div className="relative hidden md:block bg-secondary w-[385px] h-[128px] mt-8 mr-8 rounded-2xl">
             <img
               className="absolute bottom-0 left-4"
               src="../image30.png"
@@ -294,9 +302,9 @@ function App() {
       </section>
 
       {/* form section */}
-      <section className="px-36 md:h-[677px]">
+      <section className="px-8 md:px-36 pt-36 md:pt-0 h-auto md:h-[677px]">
         <div className="md:flex gap-4 text-center md:text-left">
-          <div className=" h-24">
+          <div className="md:h-24">
             <p className="uppercase font-bold text-sm text-primary">
               appointment
             </p>
@@ -307,19 +315,24 @@ function App() {
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia.
             </p>
-            <ul className="mt-4">
-              <li className="flex gap-4 font-medium text-base mt-2">
-                <Mail className="bg-primary text-white p-1 rounded-full" />
-                <div>(123) 456-7890</div>
-              </li>
-              <li className="flex gap-4 font-medium text-base mt-6">
-                <Phone className="bg-primary text-white p-1 rounded-full" />
-                <div>medico@health.care</div>
-              </li>
-            </ul>
+            <div className="flex justify-center md:justify-normal">
+              <ul className="mt-4">
+                <li className="flex gap-4 font-medium text-base mt-2">
+                  <Mail className="bg-primary text-white p-1 rounded-full" />
+                  <div>(123) 456-7890</div>
+                </li>
+                <li className="flex gap-4 font-medium text-base mt-6">
+                  <Phone className="bg-primary text-white p-1 rounded-full" />
+                  <div>medico@health.care</div>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <form className="bg-white rounded px-8 pt-6 w-[475px]">
+          <form
+            className="bg-white rounded mt-16
+           px-8 pt-6  md:w-[475px]"
+          >
             <div className="mb-4">
               <input
                 className="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -362,54 +375,6 @@ function App() {
               <button className="btn-primary w-full">Submit Now</button>
             </div>
           </form>
-
-          {/* <form className="bg-white rounded px-8 pt-6 pb-8 mb-4">
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="username"
-              >
-                Username
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="username"
-                type="text"
-                placeholder="Username"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="password"
-              >
-                Password
-              </label>
-              <input
-                className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
-                type="password"
-                placeholder="******************"
-              />
-              <p className="text-red-500 text-xs italic">
-                Please choose a password.
-              </p>
-            </div>
-            <div className="flex items-center justify-between">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-              >
-                Sign In
-              </button>
-              <a
-                className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-                href="#"
-              >
-                Forgot Password?
-              </a>
-            </div>
-          </form> */}
         </div>
       </section>
 
@@ -419,7 +384,7 @@ function App() {
             <div className="space-y-3">
               <header className="flex space-x-1">
                 <img className="w-6 h-6" src="../healthcare.png" />
-                <span className="hidden font-semibold cursor-pointer sm:inline-block">
+                <span className=" font-semibold cursor-pointer sm:inline-block">
                   Medico
                 </span>
               </header>
