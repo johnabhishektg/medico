@@ -96,7 +96,7 @@ function App() {
       </section>
 
       {/* section 2 */}
-      <section className="text-center h-[700px] md:text-left px-5 md:px-36 py-16 mt-10">
+      <section className="text-center md:h-[700px] md:text-left px-5 md:px-36 py-16 mt-10">
         <h1 className="font-semibold text-5xl">
           Dedicated to provide best treatment.
         </h1>
@@ -107,7 +107,7 @@ function App() {
           for the bliss of souls like mine.
         </p>
 
-        <div className="flex flex-wrap justify-center text-center md:text-left md:justify-normal gap-36 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 text-center md:text-left md:justify-normal gap-36 mt-20">
           <div className="relative text-center">
             <img src="../image41.png" alt="" />
             <p className="absolute font-medium text-md rounded-3xl -bottom-7 left-7 p-4 bg-primary text-white w-[192px]">
@@ -130,9 +130,9 @@ function App() {
       </section>
 
       {/* service & treat */}
-      <section className="px-36 mt-16 h-[777px]">
-        <div className="flex items-end justify-between">
-          <div className="w-[538px] h-24">
+      <section className="md:px-36 mt-16 h-[777px]">
+        <div className="md:flex text-center md:text-left items-end justify-between">
+          <div className="md:w-[538px] h-24">
             <p className="uppercase font-bold text-sm text-primary">
               Service & Treatments
             </p>
@@ -140,28 +140,34 @@ function App() {
               More than 40 specialty and health care services
             </h1>
           </div>
-          <button className="btn-primary">See All Services</button>
+          <button className="btn-primary mt-28 md:mt-0">
+            See All Services
+          </button>
         </div>
 
         {/* service card */}
-        <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-0">
-          {services.map((service) => (
-            <div className="relative mt-16 p-4 flex  justify-between bg-white rounded-lg w-[458px] h-[200px]">
-              <div className="p-2">
-                <img className="w-9" src={service.img} alt="" />
-              </div>
-              <div className="">
-                <h1 className="text-3xl font-semibold">{service.title}</h1>
-                <p className="text-md font-normal mt-4 w-[350px]">
-                  {service.description}
-                </p>
-              </div>
+        <div className="px-6 block md:flex md:justify-center">
+          <div className="mt-6 grid p-8 grid-cols-1 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-0">
+            {services.map((service) => (
+              <div className="relative mt-16 p-4 gap-4 flex justify-between bg-white rounded-lg h-44 md:w-[458px] md:h-[200px]">
+                <div className="p-2">
+                  <img className="w-16 md:w-9" src={service.img} alt="" />
+                </div>
+                <div className="">
+                  <h1 className="text-xl md:text-3xl font-semibold">
+                    {service.title}
+                  </h1>
+                  <p className="text-md font-normal mt-4 md:w-[350px]">
+                    {service.description}
+                  </p>
+                </div>
 
-              <div className="absolute right-0 bottom-0  rounded-br-lg bg-gray-300 px-4 py-2">
-                <MoveRight />
+                <div className="absolute right-0 bottom-0 rounded-br-lg bg-gray-300 px-4 py-2">
+                  <MoveRight />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>
