@@ -1,4 +1,12 @@
-import { Check, Instagram, Mail, MapPin, MoveRight, Phone } from "lucide-react";
+import {
+  Check,
+  Instagram,
+  Mail,
+  MapPin,
+  MoveRight,
+  Phone,
+  Send,
+} from "lucide-react";
 
 const services = [
   {
@@ -248,7 +256,7 @@ function App() {
           <div className="">
             <img
               className="bg-primary rounded-full text-white p-1 w-12"
-              src="../logo.png"
+              src="../healthcare.png"
               alt="logo"
             />
             <h1 className="mt-6 text-4xl font-semibold">
@@ -405,95 +413,90 @@ function App() {
         </div>
       </section>
 
-      <footer className="mt-12 p-6 border-t w-full">
+      <footer className="mt-12 px-36 py-6 bg-primary text-white border-t w-full">
         <section className="grid items-center gap-8 pb-8 pt-6 md:py-8 container">
-          <section className="flex flex-col gap-10 lg:flex-row lg:gap-20">
-            <header className="flex space-x-1">
-              <img src="../logo.png"></img>
-              <span className="hidden font-bold cursor-pointer sm:inline-block">
-                YourFilmCamera
-              </span>
-            </header>
-            <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-3">
-              <div className="space-y-3">
-                <h4 className="text-base font-semibold">Inspiration</h4>
-                <ul className="space-y-2.5">
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    SkateShop
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    OneStopShop
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    Product Card
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    Josh Tried Coding
-                  </li>
-                </ul>
-              </div>
-              <div className="space-y-3">
-                <h4 className="text-base font-semibold">Blog</h4>
-                <ul className="space-y-2.5">
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    Film Reviews
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    Poems
-                  </li>
-                </ul>
-              </div>
-              <div className="space-y-3">
-                <h4 className="text-base font-semibold">Social</h4>
-                <ul className="space-y-2.5">
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    <a
-                      href="https://www.instagram.com/johhntg/"
-                      target="_blank"
-                    >
-                      Instagram
-                    </a>
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    <a
-                      href="https://www.instagram.com/johhntg/"
-                      target="_blank"
-                    >
-                      Twitter
-                    </a>
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    <a href="https://github.com/johnabhishektg" target="_blank">
-                      Github
-                    </a>
-                  </li>
-                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
-                    <a
-                      href="https://www.linkedin.com/in/johnabhishek/"
-                      target="_blank"
-                    >
-                      LinkedIn
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section id="newsletter" className="space-y-3">
-              <h4 className="text-base font-semibold">Subscribe to our blog</h4>
-              <div className="flex relative space-y-0 ">
-                <form className="grid w-full" action=""></form>
-              </div>
-            </section>
-          </section>
-
-          <section className="flex items-center justify-between space-x-4">
-            <div className="text-sm text-muted-foreground">
-              Built by{" "}
-              <a target="_blank" href="https://github.com/johnabhishektg">
-                <span className="font-semibold transition-colors hover:text-foreground">
-                  johntg{" "}
+          <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-5">
+            <div className="space-y-3">
+              <header className="flex space-x-1">
+                <img className="w-6 h-6" src="../healthcare.png" />
+                <span className="hidden font-semibold cursor-pointer sm:inline-block">
+                  Medico
                 </span>
-              </a>
+              </header>
+              <div className="pt-12 space-y-3">
+                <button className="flex gap-2 border border-white rounded-xl p-2">
+                  <Send className="w-4" />
+                  Take an appointment
+                </button>
+                <button className="flex gap-2 border border-white rounded-xl p-2">
+                  <Instagram className="w-4" />
+                  Take an appointment
+                </button>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-base font-semibold uppercase">Services</h4>
+              <ul className="space-y-2.5">
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Pathology
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Ambulance
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Radiology
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Pharmacy
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-base font-semibold uppercase">
+                Health Checkup
+              </h4>
+              <ul className="space-y-2.5">
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Woman Health
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Cancer Screening
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Cardiac Health
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  MRI Checkup
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-base font-semibold uppercase">Department</h4>
+              <ul className="space-y-2.5">
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  General
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Dermatology
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Cardiology
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Cancer
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-base font-semibold uppercase">Quick Links</h4>
+              <ul className="space-y-2.5">
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  License
+                </li>
+                <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                  Changelog
+                </li>
+              </ul>
             </div>
           </section>
         </section>
