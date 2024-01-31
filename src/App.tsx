@@ -404,6 +404,100 @@ function App() {
           </form> */}
         </div>
       </section>
+
+      <footer className="mt-12 p-6 border-t w-full">
+        <section className="grid items-center gap-8 pb-8 pt-6 md:py-8 container">
+          <section className="flex flex-col gap-10 lg:flex-row lg:gap-20">
+            <header className="flex space-x-1">
+              <img src="../logo.png"></img>
+              <span className="hidden font-bold cursor-pointer sm:inline-block">
+                YourFilmCamera
+              </span>
+            </header>
+            <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-3">
+              <div className="space-y-3">
+                <h4 className="text-base font-semibold">Inspiration</h4>
+                <ul className="space-y-2.5">
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    SkateShop
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    OneStopShop
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    Product Card
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    Josh Tried Coding
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-base font-semibold">Blog</h4>
+                <ul className="space-y-2.5">
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    Film Reviews
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    Poems
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-base font-semibold">Social</h4>
+                <ul className="space-y-2.5">
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    <a
+                      href="https://www.instagram.com/johhntg/"
+                      target="_blank"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    <a
+                      href="https://www.instagram.com/johhntg/"
+                      target="_blank"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    <a href="https://github.com/johnabhishektg" target="_blank">
+                      Github
+                    </a>
+                  </li>
+                  <li className="text-sm text-muted-foreground transition-colors cursor-pointer hover:text-foreground">
+                    <a
+                      href="https://www.linkedin.com/in/johnabhishek/"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="newsletter" className="space-y-3">
+              <h4 className="text-base font-semibold">Subscribe to our blog</h4>
+              <div className="flex relative space-y-0 ">
+                <form className="grid w-full" action=""></form>
+              </div>
+            </section>
+          </section>
+
+          <section className="flex items-center justify-between space-x-4">
+            <div className="text-sm text-muted-foreground">
+              Built by{" "}
+              <a target="_blank" href="https://github.com/johnabhishektg">
+                <span className="font-semibold transition-colors hover:text-foreground">
+                  johntg{" "}
+                </span>
+              </a>
+            </div>
+          </section>
+        </section>
+      </footer>
     </div>
   );
 }
