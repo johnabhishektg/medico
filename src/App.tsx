@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, MoveRight, Phone } from "lucide-react";
+import { Check, Instagram, Mail, MapPin, MoveRight, Phone } from "lucide-react";
 
 const services = [
   {
@@ -168,6 +168,55 @@ function App() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* wellness section */}
+      <section className="px-36 pt-28 h-[842px] bg-white ">
+        <div className="md:flex justify-between items-end h-[340px]">
+          <div className="relative bg-secondary w-[385px] h-[128px] rounded-2xl">
+            <img
+              className="absolute bottom-0 right-8"
+              src="../image36.png"
+              alt=""
+            />
+          </div>
+
+          <ul className="mr-44 mb-12">
+            <h1 className="mb-8 text-5xl font-semibold">Why Choose Us?</h1>
+            <li className="flex gap-4 font-medium text-base mt-2">
+              <Check className="bg-primary text-white p-1 rounded-full" />
+              <div>Safety First Quality Must</div>
+            </li>
+            <li className="flex gap-4 font-medium text-base mt-4">
+              <Check className="bg-primary text-white p-1 rounded-full" />
+              <div>Patient-Centric Approach</div>
+            </li>
+            <li className="flex gap-4 font-medium text-base mt-4">
+              <Check className="bg-primary text-white p-1 rounded-full" />
+              <div>Cutting-Edge Technology</div>
+            </li>
+            <li className="flex gap-4 font-medium text-base mt-4">
+              <Check className="bg-primary text-white p-1 rounded-full" />
+              <div>Transparent Pricing</div>
+            </li>
+            <li className="flex gap-4 font-medium text-base mt-4">
+              <Check className="bg-primary text-white p-1 rounded-full" />
+              <div>Coordinated Care</div>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-12">
+          <h1 className="text-4xl font-semibold">
+            Wellness, Compassion, Quality
+          </h1>
+          <p className="mt-4 md:w-[844px] leading-6">
+            They live in Bookmarks grove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their place
+            and supplies it.
+          </p>
+          <button className="btn-primary mt-6">Take an appointment</button>
         </div>
       </section>
     </div>
